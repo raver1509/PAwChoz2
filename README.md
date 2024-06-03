@@ -16,3 +16,7 @@ W rozwiązaniu należy:
 - do łańcucha dodać test CVE obrazu, który zapewni, że obraz zostanie przesłany do swojego
 publicznego repozytorium obrazów na Github (ghcr.io) tylko wtedy gdy nie będzie zawierał zagrożeń
 sklasyfikowanych jako krytyczne lub wysokie.
+
+Ustawienie gałęzi main jaką tą, która będzie służyć do budowania obrazu, ustawienie zmiennych - repozytorium github container registry i nazwy obrazu, ustawienie uprawnień i 3 pierwsze kroki:
+sprawdzenie dostępu do repozytorium, ustawieniu qemu i buildx'a.
+![image](https://github.com/raver1509/PAwChoz2/assets/36925740/f0cc5567-bbdc-4881-a5f9-712aed7116c0)
