@@ -29,3 +29,6 @@ Lokalne zbudowanie obrazu i jego przeskanowanie w poszukiwaniu zagrożeń high l
 
 Jeżeli poprzedni krok zakończył się sukcesem zuploadowanie obrazu do github container registry:
 ![image](https://github.com/raver1509/PAwChoz2/assets/36925740/76c8eaf5-0726-4b28-afdf-760d21eb68b8)
+
+Efekt działania łancucha CI:
+![image](https://github.com/raver1509/PAwChoz2/assets/36925740/73e024c1-2537-4bdd-90a0-99c96ac745c3)
