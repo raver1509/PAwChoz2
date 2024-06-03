@@ -32,3 +32,6 @@ Jeżeli poprzedni krok zakończył się sukcesem zuploadowanie obrazu do github 
 
 Efekt działania łancucha CI:
 ![image](https://github.com/raver1509/PAwChoz2/assets/36925740/73e024c1-2537-4bdd-90a0-99c96ac745c3)
+
+Utworzony obraz:
+![image](https://github.com/raver1509/PAwChoz2/assets/36925740/834750b4-00ba-4b30-a6b7-477bc70d4a61)
