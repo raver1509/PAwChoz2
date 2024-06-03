@@ -1,4 +1,4 @@
-Treść zadania:
+Treść zadania: 
 LABORATORIUM: Programowanie Aplikacji w Chmurze Obliczeniowej
 Zadanie 2
 Podstawą do wykonania zadania jest przykład analizowany w trakcie laboratorium nr 9. Przykład ten
