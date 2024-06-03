@@ -3,11 +3,8 @@ name: GHAction example
 on:
   workflow_dispatch:
   push:
-    tags: ["*"]
     branches:
       - "main"
-  pull_request:
-    branches: ["**"]
 
 env:
   REGISTRY: ghcr.io
@@ -64,7 +61,7 @@ jobs:
         name: Build local image 
         run: |
             docker buildx inspect --bootstrap
-            docker build . --file Dockerfile --tag zadanie2test:v1
+            docker build . --file Dockerfile --tag zad2:v1
       
       -
         name: Scan local image 
@@ -73,11 +70,11 @@ jobs:
             curl -fsSL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh -o install-scout.sh
             docker login -u ${{ vars.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
             sh install-scout.sh
-            docker scout cves --exit-code --only-severity critical zadanie2test:v1
-            echo "SCAN_RESULT=$?" >> "$GITHUB_ENV"
+            docker scout cves --exit-code --only-severity high,critical zad2:v1
             
       - 
         name: Build and push Docker image
+        if: success()
         uses: docker/build-push-action@v5
         with:
           context: .
